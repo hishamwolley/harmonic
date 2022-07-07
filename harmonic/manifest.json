@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "My Extension",
+  "version": "1.00",
+  "description": "A plain text description", 
+  "content_scripts": [
+   {
+     "matches": ["https://*.linkedin.com/sales/search/people*"],
+     "js": ["content-script-people.js"]
+   },
+   {
+     "matches": ["https://*.linkedin.com/sales/company/*"],
+     "js": ["content-script-company.js"]
+   }
+ ]
+  
+
+}
+
