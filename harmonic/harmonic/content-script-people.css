@@ -1,0 +1,15 @@
+.bgColor{
+  background-color: greenyellow;
+}
+
+.txtColor {
+  color: white;
+}
+
+.rounded-md{
+  border-radius: 8px;
+} 
+
+.p-4{
+  padding: 2px 4px;
+}

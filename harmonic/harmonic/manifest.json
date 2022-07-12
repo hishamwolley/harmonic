@@ -1,0 +1,31 @@
+{
+  "manifest_version": 3,
+  "name": "LISN Companies",
+  "version": "1.03",
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": [
+    "storage",
+    "tabs",
+    "unlimitedStorage"
+  ],
+  "host_permissions": [
+  "http://www.linkedin.com/"
+],
+  "description": "Never open a company on LinkedIn sales navigator twice",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*.linkedin.com/sales*"
+      ],
+      "js": [
+        "content-script-people.js"
+      ],
+      "css": [
+        "content-script-people.css"
+      ],
+      "run_at": "document_end"
+    }
+  ]
+}
